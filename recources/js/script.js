@@ -21,10 +21,22 @@ $(document).ready(() => {
     $('#overlay_btn').click(() => {
         if ($('.overlay').height() == 30) {
             $(".overlay").animate({
-                height: "300px"
+                height: "350px"
             });
         } else {
             $(".overlay").animate({
+                height: "30px"
+            });
+        }
+    })
+
+    $('#overlay2_btn').click(() => {
+        if ($('.overlay2').height() == 30) {
+            $(".overlay2").animate({
+                height: "300px"
+            });
+        } else {
+            $(".overlay2").animate({
                 height: "30px"
             });
         }
