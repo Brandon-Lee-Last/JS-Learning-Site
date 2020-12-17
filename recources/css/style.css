@@ -1,0 +1,69 @@
+.index-body .bg-img-main {
+  height: 970px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.index-body .bg-img-main .top-nav-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.index-body .bg-img-main .top-nav-logo .logo-top {
+  width: 100%;
+  height: 90px;
+  background-color: red;
+  position: relative;
+}
+
+.index-body .bg-img-main .top-nav-logo .nav-top {
+  width: 100%;
+  height: 60px;
+  background-color: blue;
+  position: relative;
+  bottom: 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.open {
+  position: fixed;
+  left: 5px;
+  top: 140px;
+}
+
+.menu-btn {
+  float: right;
+  margin: 10px 10px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
+.menu-btn i {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.left-panel {
+  height: 100%;
+  width: 15%;
+  background-color: green;
+  z-index: 1;
+  position: fixed;
+  left: 1px;
+  top: 135px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=style.css.map */
