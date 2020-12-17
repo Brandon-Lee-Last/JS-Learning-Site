@@ -1,32 +1,53 @@
-.index-body .bg-img-main {
+.index-body .left-panel {
+  z-index: 1;
+}
+
+.index-body .bg_img {
+  z-index: -1;
+  width: 100%;
   height: 970px;
-  width: 100%;
-  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  border: 3px solid black;
 }
 
-.index-body .bg-img-main .top-nav-logo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (50%)[2];
-      grid-template-rows: repeat(2, 50%);
-  position: fixed;
-  top: 0px;
+.index-body .bg_img img {
   width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
-.index-body .bg-img-main .top-nav-logo .logo-top {
-  width: 100%;
-  height: 90px;
+.index-body .center-text {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: -700px;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.index-body .center-text h1 {
+  font-size: 40px;
+}
+
+.index-body .center-text span {
+  color: red;
+}
+
+.index-body .center-text button {
+  margin-top: 100px;
+  width: 200px;
+  height: 50px;
   background-color: red;
-  position: relative;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
-.index-body .bg-img-main .top-nav-logo .nav-top {
-  width: 100%;
-  height: 60px;
-  background-color: blue;
-  position: relative;
-  bottom: 0px;
+.index-body .center-text button:hover {
+  background-color: #ff3333;
+  color: white;
 }
 
 * {
@@ -39,7 +60,12 @@
 .open {
   position: fixed;
   left: 5px;
-  top: 140px;
+  top: 10px;
+  overflow: hidden;
+}
+
+.open i {
+  color: white;
 }
 
 .menu-btn {
@@ -57,13 +83,67 @@
 }
 
 .left-panel {
+  background-color: whitesmoke;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
   height: 100%;
-  width: 15%;
-  background-color: green;
+  width: 0%;
   z-index: 1;
   position: fixed;
   left: 1px;
-  top: 135px;
-  overflow: scroll;
+  top: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  opacity: 0.8;
+}
+
+.left-panel .nav-links {
+  padding: 0 10px;
+}
+
+.left-panel .nav-links ul {
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  border: 0;
+}
+
+.left-panel .nav-links ul li {
+  cursor: pointer;
+  padding-top: 5px;
+  height: 100%;
+}
+
+.left-panel .nav-links ul .overlay {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-top: 30px;
+  height: 30px;
+  width: 100%;
+}
+
+.left-panel .nav-links ul .overlay button {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  border: 0;
+  outline: 0;
+}
+
+.left-panel .nav-links ul .overlay button:hover {
+  background-color: #ff3333;
+  color: white;
+}
+
+.left-panel .nav-links li:hover {
+  background-color: #ff3333;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
