@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../recources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>Javascript 101 | Conditional Statements</title>
+</head>
+
+<body class="inner-post">
+
+    <div class="open">
+        <button class="menu-btn" id="open_btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <div class="left-panel">
+        <div id="close-btn">
+            <button class="menu-btn" id="close_btn"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <div class="nav-links">
+            <ul class="main_ul">
+                <li>Home</li>
+                <div class="overlay">
+                    <button id="overlay_btn">JAVASCRIPT TUTORIALS</button>
+                    <ul>
+                        <li><a href="../views/Variables.html">Variables</a></li>
+                        <li><a href="../views/Condition_Statements.html">Condition Statements</a></li>
+                        <li><a href="../views/Arrays_and_Loops.html">Arrays and Loops</a></li>
+                        <li><a>Maps</a></li>
+                        <li><a>Built in Functions</a></li>
+                        <li><a>User Defined Functions</a></li>
+                        <li><a>Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="overlay2">
+                    <button id="overlay2_btn">JQUERY TUTORIALS</button>
+                    <ul>
+                        <li><a>Functions</a></li>
+                        <li><a>Selectors</a></li>
+                        <li><a>Creating and appending elements</a></li>
+                        <li><a>Separate Scripting Files:</a></li>
+                        <li><a>Events and effects:</a></li>
+                        <li><a>Effect chaining:</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="post-text">
+        <h1>Welcome to <span class="color-text">Condition Statements</span></h1>
+        <p>Human beings (and other animals) make decisions all the time that affect their lives, from small ("should I eat one cookie or two?") to large ("should I stay in my home country and work on my father's farm, or should I move to America and study
+            astrophysics?") Conditional statements allow us to represent such decision making in JavaScript, from the choice that must be made (for example, "one cookie or two"), to the resulting outcome of those choices (perhaps the outcome of "ate one
+            cookie" might be "still felt hungry", and the outcome of "ate two cookies" might be "felt full, but mom scolded me for eating all the cookies".)
+        </p>
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                if (hour
+                < 18) {<br>
+                    greeting="Good day" ;
+                    <br>}
+            </div>
+            <h4>The outcome will be:</h4>
+            <br>
+            <div class="inner-example">
+                Good Day
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <h3>Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript we have the following conditional statements:</h3>
+        <ul>
+            <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+            <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+            <li>Use else if to specify a new condition to test, if the first condition is false</li>
+            <li>Use switch to specify many alternative blocks of code to be executed</li>
+        </ul>
+
+        <h3>In this example, we will be deciding which text to output.</h3>
+        <div class="example-box">
+            <h2>Example</h2>
+            <p>If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":</p>
+            <div class="inner-example">
+                var hour = 12;<br> if (hour
+                < 18) { <br>
+                    greeting = "Good day";
+                    <br>} else {<br> greeting = "Good evening";
+                    <br>}
+            </div>
+            <p>What will the outcome be?</p>
+            <div id="test-div">
+                <input type="radio" id="input1" name="input" value="10">
+                <label for="">Good Evening</label>
+                <input type="radio" id="input2" name="input" value="11">
+                <label for="">Good Day</label>
+            </div>
+        </div>
+
+        <hr class="line">
+
+
+        <div class="tip">
+            <h3>TIP</h3>
+            <h4>Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.</h4>
+        </div>
+
+
+    </div>
+
+    <!--Jquery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../recources/js/script.js"></script>
+</body>
+
+</html>
