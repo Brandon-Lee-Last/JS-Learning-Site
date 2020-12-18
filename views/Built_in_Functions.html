@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../recources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>Javascript 101 | Variables</title>
+</head>
+
+<body class="inner-post">
+
+    <div class="open">
+        <button class="menu-btn" id="open_btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <div class="left-panel">
+        <div id="close-btn">
+            <button class="menu-btn" id="close_btn"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <div class="nav-links">
+            <ul class="main_ul">
+                <li>Home</li>
+                <div class="overlay">
+                    <button id="overlay_btn">JAVASCRIPT TUTORIALS</button>
+                    <ul>
+                        <li><a href="../views/Variables.html">Variables</a></li>
+                        <li><a href="../views/Condition_Statements.html">Condition Statements</a></li>
+                        <li><a>Arrays and Loops</a></li>
+                        <li><a>Maps</a></li>
+                        <li><a>Built in Functions</a></li>
+                        <li><a>User Defined Functions</a></li>
+                        <li><a>Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="overlay2">
+                    <button id="overlay2_btn">JQUERY TUTORIALS</button>
+                    <ul>
+                        <li><a>Functions</a></li>
+                        <li><a>Selectors</a></li>
+                        <li><a>Creating and appending elements</a></li>
+                        <li><a>Separate Scripting Files:</a></li>
+                        <li><a>Events and effects:</a></li>
+                        <li><a>Effect chaining:</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="post-text">
+        <h1>Welcome to <span class="color-text">Built In Functions</span></h1>
+        <p>JavaScript gives you access a number of built-in functions, including the prompt() function, which lets you ask the user for written input. As with the confirm() function, you provide a text prompt to ask the user to provide a value. On return,
+            you set the output of the function equal to the prompt() function and use the data in your application.
+        </p>
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var name = "John";
+                <br>var last_name = "Smith";
+                <br> concat(name, " " + last_name);
+            </div>
+            <br>
+            <div class="inner-example">
+                The outcome will be "John Smith"
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <h3>There are many other built-in functions out there, some include</h3>
+        <ul>
+            <li>charAt()
+                <br>Returns the character at the specified index.</li>
+            <li>charCodeAt()
+                <br>Returns a number indicating the Unicode value of the character at the given index.</li>
+            <li>indexOf()
+                <br>Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</li>
+            <li> lastIndexOf()
+                <br>Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found</li>
+            <li>length()
+                <br>Returns the length of the string.</li>
+        </ul>
+
+        <h3>In this example, price1, price2, and total, are variables</h3>
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var car_name = "Mazda 3 Mps";
+                <br> console.log(car_name.length());
+            </div>
+            <p>What is the answer?</p>
+            <div id="test-div">
+                <input type="radio" id="input1" name="input" value="10">
+                <label for="">9</label>
+                <input type="radio" id="input2" name="input" value="11">
+                <label for="">10</label>
+                <input type="radio" id="input3" name="input" value="13">
+                <label for="">7</label><br>
+            </div>
+        </div>
+
+        <div class="tip">
+            <h3>TIP</h3>
+            <h4>You can also create your own functions if you feel the js functions are not what you are looking for.</h4>
+        </div>
+
+
+    </div>
+
+    <!--Jquery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../recources/js/script.js"></script>
+</body>
+
+</html>
