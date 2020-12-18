@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../recources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>Javascript 101 | Arrays and Loops</title>
+</head>
+
+<body class="inner-post">
+
+    <div class="open">
+        <button class="menu-btn" id="open_btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <div class="left-panel">
+        <div id="close-btn">
+            <button class="menu-btn" id="close_btn"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <div class="nav-links">
+            <ul class="main_ul">
+                <li>Home</li>
+                <div class="overlay">
+                    <button id="overlay_btn">JAVASCRIPT TUTORIALS</button>
+                    <ul>
+                        <li><a href="../views/Variables.html">Variables</a></li>
+                        <li><a href="../views/Condition_Statements.html">Condition Statements</a></li>
+                        <li><a href="../views/Arrays_and_Loops.html">Arrays and Loops</a></li>
+                        <li><a href="../views/Maps.html">Maps</a></li>
+                        <li><a>Built in Functions</a></li>
+                        <li><a>User Defined Functions</a></li>
+                        <li><a>Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="overlay2">
+                    <button id="overlay2_btn">JQUERY TUTORIALS</button>
+                    <ul>
+                        <li><a>Functions</a></li>
+                        <li><a>Selectors</a></li>
+                        <li><a>Creating and appending elements</a></li>
+                        <li><a>Separate Scripting Files:</a></li>
+                        <li><a>Events and effects:</a></li>
+                        <li><a>Effect chaining:</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="post-text">
+        <h1>Welcome to <span class="color-text">Arrays and Loops</span></h1>
+        <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!) The various loop mechanisms offer different ways to determine
+            the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.
+
+
+        </p>
+        <h3>What is an Array?</h3>
+        <p>An array is a special variable, which can hold more than one value at a time. If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var car1 = "Saab";
+                <br>var car2 = "Volvo";
+                <br>var car3 = "BMW";
+            </div>
+        </div>
+
+        <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300? The solution is an array! An array can hold many values under a single name, and you can access the values by referring to an
+            index number.</p>
+
+        <hr class="line">
+
+        <h3>Creating an Array</h3>
+        <p>Using an array literal is the easiest way to create a JavaScript Array.</p>
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var cars = ["Saab", "Volvo", "BMW"];
+            </div>
+        </div>
+        <p>Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var cars = [
+                <br> "Saab",<br> "Volvo",<br> "BMW" <br>];
+            </div>
+        </div>
+
+
+        <hr class="line">
+
+        <h3>Fetching values from an array</h3>
+        <p>JavaScript variables can be objects. Arrays are special kinds of objects. Because of this, you can have variables of different types in the same Array. You can have objects in an Array. You can have functions in an Array. You can have arrays in
+            an Array:</p>
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var cars = [
+                <br> "Saab",<br> "Volvo",<br> "BMW" <br>];
+
+                <br> console.log(cars[0]);
+            </div>
+            <br>
+            <div class="inner-example">
+                The asnwer will be "Saab"
+            </div>
+        </div>
+
+
+        <h3>In this example, we will be fetching a value from the array.</h3>
+        <div class="example-box">
+            <h2>Example</h2>
+            <div class="inner-example">
+                var cars = [
+                <br> "Pizza",<br> "Burger",<br> "Fries" <br>];
+
+                <br> console.log(cars[2]);
+            </div>
+            <p>What will total equal to?</p>
+            <div id="test-div">
+                <input type="radio" id="input1" name="input" value="10">
+                <label for="">Pizza</label>
+                <input type="radio" id="input2" name="input" value="11">
+                <label for="">Fries</label>
+                <input type="radio" id="input3" name="input" value="13">
+                <label for="">Burger</label><br>
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <h2>Loops</h2>
+        <p>Loops are handy, if you want to run the same code over and over again, each time with a different value. Often this is the case when working with arrays:</p>
+
+
+
+        <div class="example-box">
+            <h2>Example</h2>
+            <h2>Instead of writing this</h2>
+            <div class="inner-example">
+                text += cars[0]; <br> text += cars[1]; <br> text += cars[2]; <br> text += cars[3]; <br> text += cars[4];<br> text += cars[5];
+            </div>
+            <br>
+            <h3>We can loop through like this</h3>
+            <div class="inner-example">
+                var i;<br> for (i = 0; i
+                < cars.length; i++) {<br> text += cars[i]; <br>} </div>
+        </div>
+
+        <div class="tip">
+            <h3>TIP</h3>
+            <h4>If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. Read about breaks in a later chapter of this tutorial.</h4>
+        </div>
+
+
+    </div>
+
+    <!--Jquery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../recources/js/script.js"></script>
+</body>
+
+</html>
