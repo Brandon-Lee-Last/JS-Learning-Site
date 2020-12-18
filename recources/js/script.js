@@ -41,4 +41,14 @@ $(document).ready(() => {
             });
         }
     })
+
+    //Input examples logic.
+
+    $('#test-div').click((event) => {
+        if (event.target.id == "input2") {
+            $("input[name=input]:checked").next().css('color', 'limegreen');
+        } else {
+            $("input[name=input]:checked").next().css('color', 'red');
+        }
+    })
 })
