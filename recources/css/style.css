@@ -66,6 +66,15 @@
   color: red;
 }
 
+.comments {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .open {
   position: fixed;
   left: 5px;
@@ -184,6 +193,10 @@
   text-align: center;
 }
 
+.inner-post .post-text h3 {
+  margin: 10px 0 10px 0;
+}
+
 .inner-post .post-text p {
   margin-top: 20px;
   font-weight: normal;
@@ -229,9 +242,51 @@
 }
 
 .inner-post .post-text .tip {
+  margin-top: 20px;
   width: 100%;
   height: auto;
   background-color: lightyellow;
   padding: 20px;
+}
+
+.inner-post .btn_test {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.inner-post .btn_test:hover {
+  background-color: #ff3333;
+  color: white;
+}
+
+.inner-post .test_cube {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  margin-top: 20px;
+}
+
+.inner-post .next {
+  background-color: red;
+  padding: 10px;
+  float: right;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+}
+
+.inner-post .next:hover {
+  background-color: #ff3d3d;
+}
+
+.inner-post .next:hover i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 /*# sourceMappingURL=style.css.map */

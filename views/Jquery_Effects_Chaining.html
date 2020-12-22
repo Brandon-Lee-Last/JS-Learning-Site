@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <title>Javascript 101 | Variables</title>
+    <title>Javascript 101 | Effects Chaining</title>
 </head>
 
 <body class="inner-post">
@@ -54,65 +54,56 @@
 
 
     <div class="post-text">
-        <h1>Welcome to <span class="color-text">Built In Functions</span></h1>
-        <p>JavaScript gives you access a number of built-in functions, including the prompt() function, which lets you ask the user for written input. As with the confirm() function, you provide a text prompt to ask the user to provide a value. On return,
-            you set the output of the function equal to the prompt() function and use the data in your application.
+        <h1>Welcome to <span class="color-text">Effects Chaining</span></h1>
+        <p>Until now we have been writing jQuery statements one at a time (one after the other). However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s). Tip: This way, browsers
+            do not have to find the same element(s) more than once. To chain an action, you simply append the action to the previous action. The following example chains together the css(), slideUp(), and slideDown() methods. The "p1" element first changes
+            to red, then it slides up, and then it slides down:
         </p>
-
         <div class="example-box">
             <h2>Example</h2>
             <div class="inner-example">
-                var name = "John";
-                <br>var last_name = "Smith";
-                <br> concat(name, " " + last_name);
-            </div>
-            <br>
-            <div class="inner-example">
-                The outcome will be "John Smith"
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
             </div>
         </div>
 
         <hr class="line">
 
-        <h3>There are many other built-in functions out there, some include</h3>
+        <div class="tip">
+            <h3>TIP</h3>
+            <h4>When chaining, the line of code could become quite long. However, jQuery is not very strict on the syntax; you can format it like you want, including line breaks and indentations.</h4>
+        </div>
+
+        <hr class="line">
+
+        <h3>From the example above, you can expect:</h3>
         <ul>
-            <li>charAt()
-                <br>Returns the character at the specified index.</li>
-            <li>charCodeAt()
-                <br>Returns a number indicating the Unicode value of the character at the given index.</li>
-            <li>indexOf()
-                <br>Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</li>
-            <li> lastIndexOf()
-                <br>Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found</li>
-            <li>length()
-                <br>Returns the length of the string.</li>
+            <li>x stores the value 5</li>
+            <li>y stores the value 6</li>
+            <li>z stores the value 11</li>
         </ul>
 
         <h3>In this example, price1, price2, and total, are variables</h3>
         <div class="example-box">
             <h2>Example</h2>
             <div class="inner-example">
-                var car_name = "Mazda 3 Mps";
-                <br> console.log(car_name.length());
+                $(".cube").css("color", "red") .slideUp(2000) .slideDown(2000);
             </div>
-            <p>What is the answer?</p>
             <div id="test-div">
-                <input type="radio" id="input1" name="input" value="10">
-                <label for="">9</label>
-                <input type="radio" id="input2" name="input" value="11">
-                <label for="">10</label>
-                <input type="radio" id="input3" name="input" value="13">
-                <label for="">7</label><br>
+                <button class="btn_test">Try it out.</button>
+                <div class="test_cube">
+
+                </div>
             </div>
         </div>
 
         <div class="tip">
             <h3>TIP</h3>
-            <h4>You can also create your own functions if you feel the js functions are not what you are looking for.</h4>
+            <h4>jQuery throws away extra whitespace and executes the lines above as one long line of code.</h4>
         </div>
 
-        <a href="../views/User_Functions.html" class="next">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-
+        <div>
+            Completed Javascript 101 course, well done.
+        </div>
 
     </div>
 

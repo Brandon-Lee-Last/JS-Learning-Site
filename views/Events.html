@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <title>Javascript 101 | Variables</title>
+    <title>Javascript 101 | Events</title>
 </head>
 
 <body class="inner-post">
@@ -54,64 +54,61 @@
 
 
     <div class="post-text">
-        <h1>Welcome to <span class="color-text">Built In Functions</span></h1>
-        <p>JavaScript gives you access a number of built-in functions, including the prompt() function, which lets you ask the user for written input. As with the confirm() function, you provide a text prompt to ask the user to provide a value. On return,
-            you set the output of the function equal to the prompt() function and use the data in your application.
+        <h1>Welcome to <span class="color-text">Events</span></h1>
+        <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.
         </p>
-
         <div class="example-box">
             <h2>Example</h2>
             <div class="inner-example">
-                var name = "John";
-                <br>var last_name = "Smith";
-                <br> concat(name, " " + last_name);
-            </div>
-            <br>
-            <div class="inner-example">
-                The outcome will be "John Smith"
+                <label><</label>button onclick="document.getElementById('demo').innerHTML = Date()">The time is?<label><</label>/button>
             </div>
         </div>
 
         <hr class="line">
 
-        <h3>There are many other built-in functions out there, some include</h3>
+        <h3>An HTML event can be something the browser does, or something a user does. Here are some examples of HTML events:</h3>
         <ul>
-            <li>charAt()
-                <br>Returns the character at the specified index.</li>
-            <li>charCodeAt()
-                <br>Returns a number indicating the Unicode value of the character at the given index.</li>
-            <li>indexOf()
-                <br>Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</li>
-            <li> lastIndexOf()
-                <br>Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found</li>
-            <li>length()
-                <br>Returns the length of the string.</li>
+            <li>An HTML web page has finished loading</li>
+            <li>An HTML input field was changed</li>
+            <li>An HTML button was clicked</li>
         </ul>
 
-        <h3>In this example, price1, price2, and total, are variables</h3>
+        <p>Often, when events happen, you may want to do something. JavaScript lets you execute code when events are detected. HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.</p>
+
+        <h3>In this example, we will see what the vent triggers.</h3>
         <div class="example-box">
             <h2>Example</h2>
             <div class="inner-example">
-                var car_name = "Mazda 3 Mps";
-                <br> console.log(car_name.length());
+                <label><</label>button onclick="this.innerHTML = Date()">The time is?<label><</label>/button>
             </div>
-            <p>What is the answer?</p>
+            <p>What will the inner html be?</p>
             <div id="test-div">
                 <input type="radio" id="input1" name="input" value="10">
-                <label for="">9</label>
+                <label for="">The current date and time</label>
                 <input type="radio" id="input2" name="input" value="11">
-                <label for="">10</label>
+                <label for="">The current date only.</label>
                 <input type="radio" id="input3" name="input" value="13">
-                <label for="">7</label><br>
+                <label for="">13 January 2020</label><br>
             </div>
         </div>
+
+        <hr class="line">
+
+        <h3>What can JavaScript Do?</h3>
+        <ul>
+            <li>Things that should be done every time a page loads</li>
+            <li>Things that should be done when the page is closed</li>
+            <li>Action that should be performed when a user clicks a button</li>
+            <li>Content that should be verified when a user inputs data</li>
+            <li>And More...</li>
+        </ul>
 
         <div class="tip">
             <h3>TIP</h3>
-            <h4>You can also create your own functions if you feel the js functions are not what you are looking for.</h4>
+            <h4>JavaScript code is often several lines long. It is more common to see event attributes calling functions.</h4>
         </div>
 
-        <a href="../views/User_Functions.html" class="next">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="../views/Jquery_Function.html" class="next">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 
 
     </div>

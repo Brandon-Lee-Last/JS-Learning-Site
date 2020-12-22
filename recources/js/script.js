@@ -51,4 +51,13 @@ $(document).ready(() => {
             $("input[name=input]:checked").next().css('color', 'red');
         }
     })
+
+
+    $('.btn_test').click((event) => {
+        $('.test_cube').css("background-color", "red").slideUp(2000).slideDown(2000);
+    })
+
+    $('#start').click((event) => {
+        window.location.href = "/views/Variables.html";
+    })
 })
